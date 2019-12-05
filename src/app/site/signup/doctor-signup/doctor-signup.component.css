@@ -1,0 +1,11 @@
+.image
+{
+    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWIX3hGzzhlRcGhuql7E66bCTO-oU0ikaP3nDI0yXQUERBXgSR"); /* The image used */
+  background-size: auto;
+  height: 1700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ 
+}

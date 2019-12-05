@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+/* include stylesheet for truYum */
+.card-img-top {
+    width: 100%;
+    height: 500px;
+}
+.material-icons.md-36 {
+	font-size: 35px;
+	line-height: 1.5;
+	vertical-align: middle;
+}
+
+.material-icons.other_icon {
+	line-height: 1.75;
+	vertical-align: middle;
+}
+
+.navbar_top {
+	background-color:rgb(126, 216, 243);
+}
+
+.navbar_bottom {
+	background-color:rgb(126, 216, 243);
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+.badge-primary.delivery_badge {
+	vertical-align: super;
+}
+
+.delete-icon {
+	text-align: right;
+}
+
+.signup-btn {
+	background-color: lightblue;
+	color: white;
+}
+
+/* .search-bar {
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-image:
+		url("https://images.unsplash.com/photo-1547248085-bf272dd7cb4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+		height : 100%;
+		width : auto;
+} */
+.image
+{
+    
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTWIX3hGzzhlRcGhuql7E66bCTO-oU0ikaP3nDI0yXQUERBXgSR"); /* The image used */
+  background-size: auto;
+  height: 1000px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+ 
+}
+
+.image .content {
+    
+    
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+   
+  }

@@ -1,0 +1,66 @@
+<div class="card image">
+    <div class="card mx-auto content mt-5">
+     <div class="card-body">
+         <div class="row">
+              <div class="col-12">
+                  <h4 class="card-title">Booking Details</h4>
+               </div>
+         </div>
+
+             <div class="row">
+                <div class="col-12">
+                    <h5><b>Doctor Name : </b>  {{doctor.firstname}}</h5>
+                </div>
+             </div>
+                              
+                                  
+             <div class="row">
+                <div class="col-12">
+                    <i class="material-icons other_icon">access_time</i> <b>Working Hours</b> 
+                        {{doctor.workhours}}
+                 </div>
+             </div>
+                                 
+
+             
+
+ 
+                             
+                        
+
+                                <div class="row">
+                                    <div class="col-12">
+                                            <div> <b>Medical Service</b>
+                                            {{doctor.medicareService.amount}}</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                            <div class="col-12">
+                                                    <div><b>Medical Service Discription</b>
+                                                    {{doctor.medicareService.servicedesc}}</div>
+                                                </div>
+                                            </div>
+
+                                    <div class ="row"> 
+                                            <div class="col-12">
+                                        <div class="mr-auto"><b>Amount  </b>{{doctor.medicareService.amount}}</div>
+                                </div>
+                                </div> 
+
+                                
+
+                          
+                            <div class="row">
+                                     <div class="col-1">
+                                        <button (click)="Booking(doctor.firstname)" type="button"  class="btn btn-dark btn-sm">
+                                            <i class="material-icons other_icon"> calender-today </i> Confirm
+                                        </button>
+                                    </div> 
+                                </div>
+                            </div>
+
+            </div>
+        </div>
+
+

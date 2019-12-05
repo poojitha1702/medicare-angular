@@ -1,0 +1,37 @@
+<div class="row container-fluid image">
+    <div class="col-xs-12 my-5 mx-auto">
+        <h1>Doctor Pending Request</h1>
+        <div *ngIf="this.size == 0" class="alert alert-danger content mt-5">
+                No Doctor Request Pending.Click Back to go to Previous Page
+                    <a routerLink="/admin">Back.</a>
+        </div>
+        <div class="card mt-5 content" *ngIf="this.size > 0">
+            <table class="table">
+                <tr *ngFor="let doctor of user">
+                    <td class="ml-5 text-light"><b>{{doctor.username}}</b></td>
+                    <td> <div class="ml-auto blue">
+                            <a class="nav-link center" (click)="docDetails(doctor.username)">
+                                    <b class="text-light">DETAILS</b>
+                                </a>
+                    </div>   </td>
+                    <td>
+                        <div class="row">
+                            <div class="ml-auto">
+                                    <a class="nav-link delete-icon" (click)="onApprove(doctor)">
+                                            <i class="material-icons btn-success">check</i>
+                                        </a>
+
+                                <a class="nav-link delete-icon" (click)="onReject(doctor.id)">
+                                    <i class="material-icons btn-danger">close</i>
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+              
+            </table>
+        </div>
+    </div>
+</div>
+
+
